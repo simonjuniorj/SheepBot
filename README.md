@@ -1,47 +1,39 @@
-# A Discord Music Bot written in JavaScript, the discord.js library and discord.js-commando framework
+# SheepBot V1
+> Outdated and Retired from service in 13 june 2022!
 
 [![image](https://img.shields.io/badge/language-javascript-yellow)](https://www.javascript.com/)
 [![image](https://img.shields.io/badge/node-%3E%3D%2012.0.0-blue)](https://nodejs.org/)
 
+*Im a simple Discord bot, written in Javascript, using Discord.js v12 library and Discord.js-commando framework*
+*I service as a public Music bot, with free and simple commands, avaliable to everyone, to play music, while playing some game in vc*
+
+**Feel free to use that repository as a reference, base for future Discord Bots!**
+
+
+## Self-Hosting
 ### Installing the dependencies
 
+> Firstly you need to install all the dependencies from **npm**, you can do this writing
 `npm i`
+> and everything should install as normal
 
 ### Setup
 
-Make a config.json file in the root directory of the project and add:
-
-- Minimum
-
+> Make a **config.json** file in the root directory of the project and add:
 ```
 {
-  "prefix": "!",
-  "discord_owner_id": "Your-Discord-ID",
-  "token": "Your-Bot-Token",
-  "youtubeAPI": "youtube-api-key"
-}
-```
-
-- Full Command List
-
-```
-{
-  "invite": "false",
-  "prefix": "!",
-  "discord_owner_id": "Your-Discord-ID",
-  "token": "Your-Bot-Token",
-  "youtubeAPI": "youtube-api-key",
-  "geniusLyricsAPI": "genius-api-key",
-  "tenorAPI": "tenor-API-key",
-  "newsAPI": "news-api-key",
-  "twitchClientID": "Your-Client-ID",
-  "twitchClientSecret": "Your-Client-Secret"
+    "invite": "false", //Stands for, to make your bot easly invitable
+    "prefix": "s?", //Here you set your prefix for commands (yeah, this bot uses chat input command system)
+    "discord_owner_id": "<discord_owner_id_here>", //Here put your main Owner Discord account ID, to execute Owner only commands (needed)
+    "token": "<paste_your_discord_token_here>", //Here you put your Discord Bot Token (needed)
+    "youtubeAPI": "<youtube_api_here>", //To make the music to work, you need to get your YoutubeAPI key. You can do this from https://console.cloud.google.com/apis/dashboard
+    "maintenance": false //This blocks other users (non owner) to executing any commands, helpful if you need to perform an maintenance
 }
 ```
 
 Note: When setting `"invite": true` remember to enable the Public Bot option in the [Discord Developer Portal](https://discordapp.com/developers/applications/)
 
-I run the bot on a debian 9 environment so it might not work as intended on other operating systems(although it should), if you need a guide on how to install node.js on debian 9 or ubuntu I will link one in the resources down below.
+I run the bot on a Ubuntu 18.04 environment so it might not work as intended on other operating systems(although it should), if you need a guide on how to install node.js on ubuntu I will link one in the resources down below.
 
 Also, no matter what operating system you have, make sure [python 2.7](https://www.python.org/downloads/) is installed. **Discord.js now requires Node version greater than or equal to 12.0.0** .
 
@@ -51,31 +43,30 @@ If you are not cloning this repo, make sure your dependencies versions are the s
 
 - Music
 
-| Command               | Description                                                                                                               | Usage                                                             |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| !play                 | Play any song or playlist from youtube, you can do it by searching for a song by name or song url or playlist url         | !play darude sandstorm                                            |
-| !create-playlist      | Create a saved playlist                                                                                                   | !create-playlist EDM                                              |
-| !delete-playlist      | Delete a playlist from your saved playlists                                                                               | !delete-playlist EDM                                              |
-| !display-playlist     | Display a saved playlist                                                                                                  | !display-playlist EDM                                             |
-| !my-playlists         | List your saved playlists                                                                                                 | !my-playlists                                                     |
-| !remove-from-playlist | Remove a song from a saved playlist using its index                                                                       | !remove-from-playlist EDM 5                                       |
-| !save-to-playlist     | Save a song or a playlist to a saved playlist                                                                             | !save-to-playlist EDM https://www.youtube.com/watch?v=dQw4w9WgXcQ |
-| !pause                | Pause the current playing song                                                                                            | !pause                                                            |
-| !resume               | Resume the current paused song                                                                                            | !resume                                                           |
-| !leave                | Leaves voice channel if in one                                                                                            | !leave                                                            |
-| !remove               | Remove a specific song from queue by its number in queue                                                                  | !remove 4                                                         |
-| !queue                | Display the song queue                                                                                                    | !queue                                                            |
-| !shuffle              | Shuffle the song queue                                                                                                    | !shuffle                                                          |
-| !skip                 | Skip the current playing song                                                                                             | !skip                                                             |
-| !skipall              | Skip all songs in queue                                                                                                   | !skipall                                                          |
-| !skipto               | Skip to a specific song in the queue, provide the song number as an argument                                              | !skipto 5                                                         |
-| !volume               | Adjust song volume                                                                                                        | !volume 80                                                        |
-| !music-trivia         | Engage in a music trivia with your friends. You can add more songs to the trivia pool in resources/music/musictrivia.json | !music-trivia                                                     |
-| !loop                 | Loop the currently playing song                                                                                           | !loop 5                                                           |
-| !loopqueue            | Loop the queue                                                                                                            | !loopqueue 2                                                      |
-| !lyrics               | Get lyrics of any song or the lyrics of the currently playing song                                                        | !lyrics song-name                                                 |
-| !now-playing          | Display the current playing song with a playback bar                                                                      | !now-playing                                                      |
-| !move                 | Move song to a desired position in queue                                                                                  | !move 8 1                                                         |
+| Command                | Aliases               | Description                                                                                                               | Usage                                                             |
+| ---------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| s?join                 | j/connect/summon      |                                                                                                                           |                                                                   |
+| s?play                 | p                     | Play any song or playlist from youtube, you can do it by searching for a song by name or song url or playlist url         | !play darude sandstorm                                            |
+| s?create-playlist      | ⸻⸻⸻           | Create a saved playlist                                                                                                   | !create-playlist EDM                                              |
+| s?delete-playlist      | ⸻⸻⸻           | Delete a playlist from your saved playlists                                                                               | !delete-playlist EDM                                              |
+| s?display-playlist     | ⸻⸻⸻           | Display a saved playlist                                                                                                  | !display-playlist EDM                                             |
+| s?my-playlists         | mps/mpy               | List your saved playlists                                                                                                 | !my-playlists                                                     |
+| s?remove-from-playlist | ⸻⸻⸻           | Remove a song from a saved playlist using its index                                                                       | !remove-from-playlist EDM 5                                       |
+| s?save-to-playlist     | ⸻⸻⸻           | Save a song or a playlist to a saved playlist                                                                             | !save-to-playlist EDM https://www.youtube.com/watch?v=dQw4w9WgXcQ |
+| s?pause                | pause-song/hold       | Pause the current playing song                                                                                            | !pause                                                            |
+| s?resume               | continue              | Resume the current paused song                                                                                            | !resume                                                           |
+| s?disconnect           | leave/dis/quit        | Leaves voice channel if in one                                                                                            | !leave                                                            |
+| s?remove               | ⸻⸻⸻           | Remove a specific song from queue by its number in queue                                                                  | !remove 4                                                         |
+| s?queue                | q                     | Display the song queue                                                                                                    | !queue                                                            |
+| s?shuffle              | ⸻⸻⸻           | Shuffle the song queue                                                                                                    | !shuffle                                                          |
+| s?skip                 | s/next                | Skip the current playing song                                                                                             | !skip                                                             |
+| s?skipall              | skip-all              | Skip all songs in queue                                                                                                   | !skipall                                                          |
+| s?skipto               | ⸻⸻⸻           | Skip to a specific song in the queue, provide the song number as an argument                                              | !skipto 5                                                         |
+| s?volume               | vl/v/vol              | Adjust song volume                                                                                                        | !volume 80                                                        |
+| s?loop                 | repeat                | Loop the currently playing song                                                                                           | !loop 5                                                           |
+| s?loopqueue            | loop-queue/queue-loop | Loop the queue                                                                                                            | !loopqueue 2                                                      |
+| s?now-playing          | np/now-playing        | Display the current playing song with a playback bar                                                                      | !now-playing                                                      |
+| s?move                 | mv/m                  | Move song to a desired position in queue                                                                                  | !move 8 1                                                         |
 
 - Other
 
