@@ -1,0 +1,9 @@
+{
+    "invite": "false",
+    "prefix": "s?",
+    "discord_owner_id": "<discord_owner_id_here>",
+    "token": "<paste_your_discord_token_here>",
+    "youtubeAPI": "<youtube_api_here>",
+    "geniusLyricsAPI": "<genius_lyrics_api_here>",
+    "maintenance": false
+}
