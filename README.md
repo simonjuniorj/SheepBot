@@ -41,13 +41,13 @@ If you are not cloning this repo, make sure your dependencies versions are the s
 
 ### Commands
 
-- Music
+> Music related:
 
 | Command                | Aliases               | Description                                                                                                               | Usage                                                             |
-| ---------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| s?join                 | j/connect/summon      |                                                                                                                           |                                                                   |
-| s?play                 | p                     | Play any song or playlist from youtube, you can do it by searching for a song by name or song url or playlist url         | !play darude sandstorm                                            |
-| s?create-playlist      | ⸻⸻⸻           | Create a saved playlist                                                                                                   | !create-playlist EDM                                              |
+| :--------------------: | :-------------------: | :------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------: |
+| s?join                 | j/connect/summon      | Allows user to join their vc. Useful, if bot is on other channel than yours.                                              | !join/j/connect/summon                                            |
+| s?play                 | p                     | Play any song or playlist from youtube.                                                                                   | !play darude sandstorm                                            |
+| s?create-playlist      | ⸻⸻⸻           | Creates empty playlist for user.                                                                                          | !create-playlist EDM                                              |
 | s?delete-playlist      | ⸻⸻⸻           | Delete a playlist from your saved playlists                                                                               | !delete-playlist EDM                                              |
 | s?display-playlist     | ⸻⸻⸻           | Display a saved playlist                                                                                                  | !display-playlist EDM                                             |
 | s?my-playlists         | mps/mpy               | List your saved playlists                                                                                                 | !my-playlists                                                     |
@@ -68,87 +68,27 @@ If you are not cloning this repo, make sure your dependencies versions are the s
 | s?now-playing          | np/now-playing        | Display the current playing song with a playback bar                                                                      | !now-playing                                                      |
 | s?move                 | mv/m                  | Move song to a desired position in queue                                                                                  | !move 8 1                                                         |
 
-- Other
+> Info
 
 | Command           | Description                                                                                                                                                        | Usage                                                                        |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
-| !cat              | Get a cute cat picture                                                                                                                                             | !cat                                                                         |
-| !dog              | Get a cute dog picture                                                                                                                                             | !dog                                                                         |
-| !fortune          | Get a fortune cookie tip                                                                                                                                           | !fortune                                                                     |
-| !insult           | Generate an evil insult                                                                                                                                            | !insult                                                                      |
-| !chucknorris      | Get a satirical fact about Chuck Norris                                                                                                                            | !chucknorris                                                                 |
-| !motivation       | Get a random motivational quote                                                                                                                                    | !motivation                                                                  |
-| !world-news       | Latest headlines from reuters, you can change the news source to whatever news source you want, just change the source in line 13 in world-news.js or ynet-news.js | !world-news                                                                  |
-| !random           | Generate a random number between two provided numbers                                                                                                              | !random 0 100                                                                |
-| !reddit           | Replies with 5 top non nsfw subreddit posts                                                                                                                        | !reddit askreddit                                                            |
-| !say              | Make the bot say anything                                                                                                                                          | !say Lorem Ipsum                                                             |
-| !sr               | Replies with the Top 10 speedrun results in every category.                                                                                                        | !sr super metroid                                                            |
-| !translate        | Translate to any language using Google translate.(only supported languages)                                                                                        | !translate english ありがとう                                                |
-| !about            | Info about me and the repo                                                                                                                                         | !about                                                                       |
-| !8ball            | Get the answer to anything!                                                                                                                                        | !8ball Is this bot awesome?                                                  |
-| !rps              | Rock Paper Scissors                                                                                                                                                | !rps                                                                         |
-| !bored            | Generate a random activity!                                                                                                                                        | !bored                                                                       |
-| !advice           | Get some advice!                                                                                                                                                   | !advice                                                                      |
-| !kanye            | Get a random Kanye quote                                                                                                                                           | !kanye                                                                       |
-| !urban dictionary | Get definitions from urban dictionary                                                                                                                              | !urban javascript                                                            |
-| !poll             | Creates a poll with up to 10 choices.                                                                                                                              | !poll "What's your favorite food?" "Hot Dogs,Pizza,Burgers,Fruits,Veggie" 10 |
-| !vote             | Starts a yes/no/don't care vote.                                                                                                                                   | !vote "Do you like to vote?." "I mean who doesn't right?!" 5                 |
-| !twitchstatus     | A quick check to see if a streamer is currently online. or to give a shout-out a fellow streamer                                                                   | !twitchstatus MasterBot or !tso MasterBot                                    |
-| !tv-show-search   | Search for Tv shows with a keyword                                                                                                                                 | !tv-show-search Duck                                                         |
-| !nickname         | Sets the selected member's nickname with the provided nickname                                                                                                     | !nickname @Master-Bot Master                                                 |
-
-- Gifs
-
-| Command   | Description                         | Usage                   |
-| --------- | ----------------------------------- | ----------------------- |
-| !animegif | Get an anime related gif by a query | !animegif one punch man |
-| !gif      | Get any gif by a query              | !gif labrador           |
-| !gintama  | Replies with a random gintama gif   | !gintama                |
-| !jojo     | Replies with a random jojo gif      | !jojo                   |
-
-- Guild
-
-| Command                    | Description                                                                    | Usage                                |
-| -------------------------- | ------------------------------------------------------------------------------ | ------------------------------------ |
-| !ban                       | Bans a tagged member                                                           | !ban @johndoe                        |
-| !invite                    | Replies with a link to invite the bot.                                         | !invite                              |
-| !kick                      | Kicks a tagged member                                                          | !kick @johndoe                       |
-| !prune                     | Delete up to 99 recent messages                                                | !prune 50                            |
-| !welcome-message           | Allows you to toggle the welcome message for new members that join the server. | !welcome-message enable              |
-| !twitch-announcer          | Allows you to Enable, Disable or Check the Twitch Announcer.                   | !ta enable                           |
-| !twitch-announcer-settings | Settings for the Twitch Announcer.                                             | !tasettings Bacon_Fixation general 1 |
+| :---------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| !about            | Displays basic information, about bot and its creators                                                                                                             | !about                                                                         |
+| !help             | Displays help command, with useful info about commands and usage                                                                                                   | !help                                                                         |
 
 ### Resources
-
-[Get a Tenor API key here](https://tenor.com/developer/keyregistration)
-
-[Get a NewsAPI API key here](https://newsapi.org/)
 
 [How to get a Youtube API key](https://developers.google.com/youtube/v3/getting-started)
 
 [Get a Genius API key here](https://genius.com/api-clients/new)
 
-[How to get a Twitch API Key](https://github.com/Bacon-Fixation/Master-Bot/wiki/Getting-Your-Twitch-API-Info)
-
 [Installing node.js on debian](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-debian-9)
 
 [Installing node.js on Windows](https://treehouse.github.io/installation-guides/windows/node-windows.html)
-
-[Installing on a Raspberry Pi](https://github.com/galnir/Master-Bot/wiki/Running-the-bot-on-a-Raspberry-Pi)
 
 ### Contributing
 
 Fork it and submit a pull request!
 Anyone is welcome to suggest new features and improve code quality!
 
-## Contributors ❤️
-
-[Bacon Fixation](https://github.com/Bacon-Fixation) - 'speedrun' commands, 'invite', 'vote', 'poll', 'welcome', 'mute', 'unmute', 'twitchstatus', 'twitch-announcer', 'welcome-message', 'tv-show-search', pi instructions and visual updates
-
-[ModoSN](https://github.com/ModoSN) - 'resolve-ip', 'rps', '8ball', 'bored', 'trump', 'advice', 'kanye', 'urban dictionary' commands and visual updates
-
-[Natemo6348](https://github.com/Natemo6348) - 'mute', 'unmute'
-
-[malokdev](https://github.com/malokdev) - 'uptime' command
-
-[chimaerra](https://github.com/chimaerra) - minor command tweaks
+## Support
+> Because it is my first and outdated/retired project, Im not going to provide any support in a near future!
