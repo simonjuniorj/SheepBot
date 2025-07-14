@@ -44,7 +44,7 @@ If you are not cloning this repo, make sure your dependencies versions are the s
 > Music related:
 
 | Command                | Aliases               | Description                                                                                                               | Usage                                                             |
-| :--------------------: | :-------------------: | :------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------: |
+| :--------------------: | :-------------------: | :------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------- |
 | s?join                 | j/connect/summon      | Allows user to join their vc. Useful, if bot is on other channel than yours.                                              | !join/j/connect/summon                                            |
 | s?play                 | p                     | Play any song or playlist from youtube.                                                                                   | !play darude sandstorm                                            |
 | s?create-playlist      | ⸻⸻⸻           | Creates empty playlist for user.                                                                                          | !create-playlist EDM                                              |
